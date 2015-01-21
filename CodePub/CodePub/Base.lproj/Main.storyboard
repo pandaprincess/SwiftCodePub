@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CodePub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="CodePub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,20 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-wi-3Ic">
-                                <rect key="frame" x="100" y="100" width="400" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="608-vQ-Q2e"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="608-vQ-Q2e"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6F-sI-Wx2">
                                 <rect key="frame" x="100" y="181" width="400" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,23 +30,72 @@
                                     <action selector="buttonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iyw-AP-zB9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tt-2t-Xvs">
+                                <rect key="frame" x="100" y="281" width="400" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Cupcakes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mkp-Zu-BNI" kind="show" id="rDJ-0q-NUg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-wi-3Ic">
+                                <rect key="frame" x="100" y="100" width="400" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="608-vQ-Q2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="608-vQ-Q2e"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3Tt-2t-Xvs" firstAttribute="centerX" secondItem="l6F-sI-Wx2" secondAttribute="centerX" id="3lx-MH-sE0"/>
                             <constraint firstItem="Ho4-wi-3Ic" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="5EX-me-CXQ"/>
+                            <constraint firstItem="3Tt-2t-Xvs" firstAttribute="height" secondItem="l6F-sI-Wx2" secondAttribute="height" id="7XT-K9-n1q"/>
                             <constraint firstItem="Ho4-wi-3Ic" firstAttribute="centerX" secondItem="l6F-sI-Wx2" secondAttribute="centerX" id="9yx-jq-arj"/>
+                            <constraint firstItem="3Tt-2t-Xvs" firstAttribute="width" secondItem="l6F-sI-Wx2" secondAttribute="width" id="EEJ-wU-gZa"/>
+                            <constraint firstItem="3Tt-2t-Xvs" firstAttribute="top" secondItem="l6F-sI-Wx2" secondAttribute="bottom" constant="40" id="KBo-AJ-hdm"/>
                             <constraint firstItem="Ho4-wi-3Ic" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" constant="-200" id="awl-Dz-aBj"/>
                             <constraint firstItem="l6F-sI-Wx2" firstAttribute="top" secondItem="Ho4-wi-3Ic" secondAttribute="bottom" constant="60" id="bsn-5d-mUY"/>
                             <constraint firstAttribute="centerX" secondItem="Ho4-wi-3Ic" secondAttribute="centerX" id="lLA-ln-3fc"/>
                             <constraint firstItem="Ho4-wi-3Ic" firstAttribute="width" secondItem="l6F-sI-Wx2" secondAttribute="width" id="sbm-Uc-OWw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5PK-lE-Eai"/>
                     <connections>
                         <outlet property="topLabel" destination="Ho4-wi-3Ic" id="eZc-PO-HeF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1359" y="484"/>
+        </scene>
+        <!--Cupcakes View Controller-->
+        <scene sceneID="r0v-HH-LH3">
+            <objects>
+                <viewController id="mkp-Zu-BNI" customClass="CupcakesViewController" customModule="CodePub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t2Z-ar-gnV"/>
+                        <viewControllerLayoutGuide type="bottom" id="uvD-d7-1rA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4i3-7o-neB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.53842674837628701" blue="0.65823816845965288" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VsJ-aa-c3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2099" y="484"/>
         </scene>
     </scenes>
 </document>
