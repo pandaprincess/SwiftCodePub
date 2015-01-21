@@ -19,6 +19,10 @@ class FirstViewController: UIViewController {
         self.topLabel.text = "HELLO"
     }
 
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

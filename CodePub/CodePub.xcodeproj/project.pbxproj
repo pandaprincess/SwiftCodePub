@@ -14,6 +14,11 @@
 		D82B520C1A705CAD00C13010 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82B520A1A705CAD00C13010 /* LaunchScreen.xib */; };
 		D82B52181A705CAD00C13010 /* CodePubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52171A705CAD00C13010 /* CodePubTests.swift */; };
 		D82B52221A70647C00C13010 /* CupcakesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52211A70647C00C13010 /* CupcakesViewController.swift */; };
+		D82B52291A706D4F00C13010 /* ck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52241A706D4F00C13010 /* ck1.jpg */; };
+		D82B522A1A706D4F00C13010 /* ck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52251A706D4F00C13010 /* ck2.jpg */; };
+		D82B522B1A706D4F00C13010 /* ck3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52261A706D4F00C13010 /* ck3.jpg */; };
+		D82B522C1A706D4F00C13010 /* ck4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52271A706D4F00C13010 /* ck4.jpg */; };
+		D82B522D1A706D4F00C13010 /* ck5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52281A706D4F00C13010 /* ck5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		D82B52161A705CAD00C13010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82B52171A705CAD00C13010 /* CodePubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePubTests.swift; sourceTree = "<group>"; };
 		D82B52211A70647C00C13010 /* CupcakesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CupcakesViewController.swift; sourceTree = "<group>"; };
+		D82B52241A706D4F00C13010 /* ck1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck1.jpg; path = Resources/ck1.jpg; sourceTree = SOURCE_ROOT; };
+		D82B52251A706D4F00C13010 /* ck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck2.jpg; path = Resources/ck2.jpg; sourceTree = SOURCE_ROOT; };
+		D82B52261A706D4F00C13010 /* ck3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck3.jpg; path = Resources/ck3.jpg; sourceTree = SOURCE_ROOT; };
+		D82B52271A706D4F00C13010 /* ck4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck4.jpg; path = Resources/ck4.jpg; sourceTree = SOURCE_ROOT; };
+		D82B52281A706D4F00C13010 /* ck5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck5.jpg; path = Resources/ck5.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		D82B51FE1A705CAD00C13010 /* CodePub */ = {
 			isa = PBXGroup;
 			children = (
+				D82B52231A706D2700C13010 /* Resources */,
 				D82B52011A705CAD00C13010 /* AppDelegate.swift */,
 				D82B52031A705CAD00C13010 /* FirstViewController.swift */,
 				D82B52211A70647C00C13010 /* CupcakesViewController.swift */,
@@ -113,6 +124,18 @@
 				D82B52161A705CAD00C13010 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82B52231A706D2700C13010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D82B52241A706D4F00C13010 /* ck1.jpg */,
+				D82B52251A706D4F00C13010 /* ck2.jpg */,
+				D82B52261A706D4F00C13010 /* ck3.jpg */,
+				D82B52271A706D4F00C13010 /* ck4.jpg */,
+				D82B52281A706D4F00C13010 /* ck5.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D82B52071A705CAD00C13010 /* Main.storyboard in Resources */,
+				D82B522D1A706D4F00C13010 /* ck5.jpg in Resources */,
+				D82B522A1A706D4F00C13010 /* ck2.jpg in Resources */,
+				D82B52291A706D4F00C13010 /* ck1.jpg in Resources */,
+				D82B522B1A706D4F00C13010 /* ck3.jpg in Resources */,
 				D82B520C1A705CAD00C13010 /* LaunchScreen.xib in Resources */,
+				D82B522C1A706D4F00C13010 /* ck4.jpg in Resources */,
 				D82B52091A705CAD00C13010 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
