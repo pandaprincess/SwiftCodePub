@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CupcakesViewController: UIViewController {
+class CupcakesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var cupcakesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,5 +34,21 @@ class CupcakesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.cupcakesTableView.dequeueReusableCellWithIdentifier("cupcakeCell", forIndexPath: indexPath) as UITableViewCell
+
+        let number = arc4random_uniform(5)+1
+        
+        var imageView = cell.viewWithTag(1) as? UIImageView
+        imageView?.image = UIImage(named: "ck\(number).jpg")
+        imageView?.alpha = 0.9
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 99;
+    }
 
 }
