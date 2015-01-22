@@ -26,8 +26,6 @@ Step 4
 		Add tableviewcell
 		Connect the tableview to viewcontroller
 		UITableViewDelegate UITableViewDatasource
-<br>
 Step 5
-<br>
 		Short intro to SpriteKit
 
