@@ -126,8 +126,10 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func setupbeer() {
-        let beerTexture1 = SKTexture(imageNamed: "beer-01")
-        let beerTexture2 = SKTexture(imageNamed: "beer-02")
+        let beerTexture1 = SKTexture(imageNamed: "beer01")
+        let beerTexture2 = SKTexture(imageNamed: "beer02")
+        let beerTexture3 = SKTexture(imageNamed: "beer03")
+        let beerTexture4 = SKTexture(imageNamed: "beer04")
         beerTexture1.filteringMode = .Nearest
         beerTexture2.filteringMode = .Nearest
 
@@ -135,7 +137,7 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
         beer.setScale(2.0)
         beer.position = CGPoint(x: self.frame.size.width * 0.35, y:self.frame.size.height * 0.6)
         
-        let anim = SKAction.animateWithTextures([beerTexture1, beerTexture2], timePerFrame: 0.2)
+        let anim = SKAction.animateWithTextures([beerTexture1, beerTexture2, beerTexture3, beerTexture4], timePerFrame: 0.2)
         flap = SKAction.repeatActionForever(anim)
         beer.runAction(flap)
         
