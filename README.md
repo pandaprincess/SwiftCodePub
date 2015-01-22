@@ -6,6 +6,7 @@ Step 1
 <br>
 Create a new project
 <br>
+<br>
 Step 2
 <br>
 <ul>
