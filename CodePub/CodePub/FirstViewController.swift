@@ -19,6 +19,10 @@ class FirstViewController: UIViewController {
         self.topLabel.text = "HELLO"
     }
 
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,5 +37,18 @@ class FirstViewController: UIViewController {
         
         self.view.backgroundColor = randomColor
     }
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+        if (motion == .MotionShake) {
+            println("MOHAHAHA")
+            self.performSegueWithIdentifier("play", sender: self)
+            
+        }
+    }
+    
 }
 

@@ -15,8 +15,12 @@ class CupcakesViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.purpleColor()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.purpleColor()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false        
     }
 
     override func didReceiveMemoryWarning() {

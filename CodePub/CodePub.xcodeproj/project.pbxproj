@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80E5B261A70F9B300677A56 /* FlappyBeerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E5B251A70F9B300677A56 /* FlappyBeerScene.swift */; };
+		D80E5B281A70F9EF00677A56 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80E5B271A70F9EF00677A56 /* SpriteKit.framework */; };
+		D80E5B311A70FB2B00677A56 /* beer-01.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B291A70FB2B00677A56 /* beer-01.png */; };
+		D80E5B321A70FB2B00677A56 /* beer-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2A1A70FB2B00677A56 /* beer-02.png */; };
+		D80E5B331A70FB2B00677A56 /* beer-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2B1A70FB2B00677A56 /* beer-03.png */; };
+		D80E5B341A70FB2B00677A56 /* beer-04.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2C1A70FB2B00677A56 /* beer-04.png */; };
+		D80E5B351A70FB2B00677A56 /* PipeDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2D1A70FB2B00677A56 /* PipeDown.png */; };
+		D80E5B361A70FB2B00677A56 /* PipeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2E1A70FB2B00677A56 /* PipeUp.png */; };
+		D80E5B371A70FB2B00677A56 /* scoreboard.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B2F1A70FB2B00677A56 /* scoreboard.png */; };
+		D80E5B381A70FB2B00677A56 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B301A70FB2B00677A56 /* sky.png */; };
+		D80E5B3A1A70FE9500677A56 /* land.png in Resources */ = {isa = PBXBuildFile; fileRef = D80E5B391A70FE9500677A56 /* land.png */; };
 		D82B52021A705CAD00C13010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52011A705CAD00C13010 /* AppDelegate.swift */; };
 		D82B52041A705CAD00C13010 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52031A705CAD00C13010 /* FirstViewController.swift */; };
 		D82B52071A705CAD00C13010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82B52051A705CAD00C13010 /* Main.storyboard */; };
@@ -19,6 +30,7 @@
 		D82B522B1A706D4F00C13010 /* ck3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52261A706D4F00C13010 /* ck3.jpg */; };
 		D82B522C1A706D4F00C13010 /* ck4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52271A706D4F00C13010 /* ck4.jpg */; };
 		D82B522D1A706D4F00C13010 /* ck5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52281A706D4F00C13010 /* ck5.jpg */; };
+		D82B523A1A70F6DB00C13010 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52391A70F6DB00C13010 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D80E5B251A70F9B300677A56 /* FlappyBeerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlappyBeerScene.swift; sourceTree = "<group>"; };
+		D80E5B271A70F9EF00677A56 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D80E5B291A70FB2B00677A56 /* beer-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-01.png"; path = "Resources/beer-01.png"; sourceTree = SOURCE_ROOT; };
+		D80E5B2A1A70FB2B00677A56 /* beer-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-02.png"; path = "Resources/beer-02.png"; sourceTree = SOURCE_ROOT; };
+		D80E5B2B1A70FB2B00677A56 /* beer-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-03.png"; path = "Resources/beer-03.png"; sourceTree = SOURCE_ROOT; };
+		D80E5B2C1A70FB2B00677A56 /* beer-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-04.png"; path = "Resources/beer-04.png"; sourceTree = SOURCE_ROOT; };
+		D80E5B2D1A70FB2B00677A56 /* PipeDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PipeDown.png; path = Resources/PipeDown.png; sourceTree = SOURCE_ROOT; };
+		D80E5B2E1A70FB2B00677A56 /* PipeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PipeUp.png; path = Resources/PipeUp.png; sourceTree = SOURCE_ROOT; };
+		D80E5B2F1A70FB2B00677A56 /* scoreboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scoreboard.png; path = Resources/scoreboard.png; sourceTree = SOURCE_ROOT; };
+		D80E5B301A70FB2B00677A56 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sky.png; path = Resources/sky.png; sourceTree = SOURCE_ROOT; };
+		D80E5B391A70FE9500677A56 /* land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = land.png; path = Resources/land.png; sourceTree = SOURCE_ROOT; };
 		D82B51FC1A705CAD00C13010 /* CodePub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82B52001A705CAD00C13010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82B52011A705CAD00C13010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +71,7 @@
 		D82B52261A706D4F00C13010 /* ck3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck3.jpg; path = Resources/ck3.jpg; sourceTree = SOURCE_ROOT; };
 		D82B52271A706D4F00C13010 /* ck4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck4.jpg; path = Resources/ck4.jpg; sourceTree = SOURCE_ROOT; };
 		D82B52281A706D4F00C13010 /* ck5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck5.jpg; path = Resources/ck5.jpg; sourceTree = SOURCE_ROOT; };
+		D82B52391A70F6DB00C13010 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80E5B281A70F9EF00677A56 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +118,13 @@
 				D82B52011A705CAD00C13010 /* AppDelegate.swift */,
 				D82B52031A705CAD00C13010 /* FirstViewController.swift */,
 				D82B52211A70647C00C13010 /* CupcakesViewController.swift */,
+				D82B52391A70F6DB00C13010 /* GameViewController.swift */,
+				D80E5B251A70F9B300677A56 /* FlappyBeerScene.swift */,
 				D82B52051A705CAD00C13010 /* Main.storyboard */,
 				D82B52081A705CAD00C13010 /* Images.xcassets */,
 				D82B520A1A705CAD00C13010 /* LaunchScreen.xib */,
 				D82B51FF1A705CAD00C13010 /* Supporting Files */,
+				D80E5B271A70F9EF00677A56 /* SpriteKit.framework */,
 			);
 			path = CodePub;
 			sourceTree = "<group>";
@@ -129,6 +157,15 @@
 		D82B52231A706D2700C13010 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D80E5B391A70FE9500677A56 /* land.png */,
+				D80E5B291A70FB2B00677A56 /* beer-01.png */,
+				D80E5B2A1A70FB2B00677A56 /* beer-02.png */,
+				D80E5B2B1A70FB2B00677A56 /* beer-03.png */,
+				D80E5B2C1A70FB2B00677A56 /* beer-04.png */,
+				D80E5B2D1A70FB2B00677A56 /* PipeDown.png */,
+				D80E5B2E1A70FB2B00677A56 /* PipeUp.png */,
+				D80E5B2F1A70FB2B00677A56 /* scoreboard.png */,
+				D80E5B301A70FB2B00677A56 /* sky.png */,
 				D82B52241A706D4F00C13010 /* ck1.jpg */,
 				D82B52251A706D4F00C13010 /* ck2.jpg */,
 				D82B52261A706D4F00C13010 /* ck3.jpg */,
@@ -219,13 +256,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D82B52071A705CAD00C13010 /* Main.storyboard in Resources */,
+				D80E5B381A70FB2B00677A56 /* sky.png in Resources */,
 				D82B522D1A706D4F00C13010 /* ck5.jpg in Resources */,
 				D82B522A1A706D4F00C13010 /* ck2.jpg in Resources */,
 				D82B52291A706D4F00C13010 /* ck1.jpg in Resources */,
+				D80E5B361A70FB2B00677A56 /* PipeUp.png in Resources */,
+				D80E5B341A70FB2B00677A56 /* beer-04.png in Resources */,
+				D80E5B311A70FB2B00677A56 /* beer-01.png in Resources */,
 				D82B522B1A706D4F00C13010 /* ck3.jpg in Resources */,
+				D80E5B321A70FB2B00677A56 /* beer-02.png in Resources */,
+				D80E5B371A70FB2B00677A56 /* scoreboard.png in Resources */,
+				D80E5B331A70FB2B00677A56 /* beer-03.png in Resources */,
 				D82B520C1A705CAD00C13010 /* LaunchScreen.xib in Resources */,
+				D80E5B3A1A70FE9500677A56 /* land.png in Resources */,
 				D82B522C1A706D4F00C13010 /* ck4.jpg in Resources */,
 				D82B52091A705CAD00C13010 /* Images.xcassets in Resources */,
+				D80E5B351A70FB2B00677A56 /* PipeDown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80E5B261A70F9B300677A56 /* FlappyBeerScene.swift in Sources */,
+				D82B523A1A70F6DB00C13010 /* GameViewController.swift in Sources */,
 				D82B52221A70647C00C13010 /* CupcakesViewController.swift in Sources */,
 				D82B52041A705CAD00C13010 /* FirstViewController.swift in Sources */,
 				D82B52021A705CAD00C13010 /* AppDelegate.swift in Sources */,
@@ -437,6 +485,7 @@
 				D82B521D1A705CAD00C13010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D82B521E1A705CAD00C13010 /* Build configuration list for PBXNativeTarget "CodePubTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +494,7 @@
 				D82B52201A705CAD00C13010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
