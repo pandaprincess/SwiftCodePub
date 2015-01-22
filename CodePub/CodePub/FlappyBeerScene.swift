@@ -127,27 +127,25 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
     
     func setupbeer() {
         let beerTexture1 = SKTexture(imageNamed: "beer01")
-        let beerTexture2 = SKTexture(imageNamed: "beer02")
-        let beerTexture3 = SKTexture(imageNamed: "beer03")
-        let beerTexture4 = SKTexture(imageNamed: "beer04")
+        //TODO add more textures
+        
         beerTexture1.filteringMode = .Nearest
-        beerTexture2.filteringMode = .Nearest
 
         beer = SKSpriteNode(texture: beerTexture1)
         beer.setScale(2.0)
         beer.position = CGPoint(x: self.frame.size.width * 0.35, y:self.frame.size.height * 0.6)
         
-        let anim = SKAction.animateWithTextures([beerTexture1, beerTexture2, beerTexture3, beerTexture4], timePerFrame: 0.2)
-        flap = SKAction.repeatActionForever(anim)
-        beer.runAction(flap)
+        //TODO add animation to beer
+        
         
         beer.physicsBody = SKPhysicsBody(circleOfRadius: beer.size.height / 2.0)
         beer.physicsBody?.dynamic = true
         beer.physicsBody?.allowsRotation = false
         
+        //TODO pipes contact && collision???
         beer.physicsBody?.categoryBitMask = beerCategory
-        beer.physicsBody?.collisionBitMask = worldCategory | pipeCategory
-        beer.physicsBody?.contactTestBitMask = worldCategory | pipeCategory
+        beer.physicsBody?.collisionBitMask = worldCategory
+        beer.physicsBody?.contactTestBitMask = worldCategory
         
         self.addChild(beer)
     }
@@ -180,7 +178,8 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
         // Move beer to original position and reset velocity
         beer.position = CGPointMake(self.frame.size.width / 2.5, CGRectGetMidY(self.frame))
         beer.physicsBody?.velocity = CGVectorMake( 0, 0 )
-        beer.physicsBody?.collisionBitMask = worldCategory | pipeCategory
+        // TODO beer collision
+        beer.physicsBody?.collisionBitMask = worldCategory
         beer.speed = 2.0
         beer.zRotation = 0.0
         
@@ -214,7 +213,8 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
         pipeDown.physicsBody = SKPhysicsBody(rectangleOfSize: pipeDown.size)
         pipeDown.physicsBody?.dynamic = false
         pipeDown.physicsBody?.categoryBitMask = pipeCategory
-        pipeDown.physicsBody?.contactTestBitMask = beerCategory
+        //TODO beer contact
+
         pipePair.addChild(pipeDown)
         
         let pipeUp = SKSpriteNode(texture: pipeUpTexture)
@@ -224,7 +224,7 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
         pipeUp.physicsBody = SKPhysicsBody(rectangleOfSize: pipeUp.size)
         pipeUp.physicsBody?.dynamic = false
         pipeUp.physicsBody?.categoryBitMask = pipeCategory
-        pipeUp.physicsBody?.contactTestBitMask = beerCategory
+        //TODO beer contact
         pipePair.addChild(pipeUp)
         
         var contactNode = SKNode()
@@ -232,7 +232,7 @@ class FlappyBeerScene: SKScene, SKPhysicsContactDelegate {
         contactNode.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake( pipeUp.size.width, self.frame.size.height ))
         contactNode.physicsBody?.dynamic = false
         contactNode.physicsBody?.categoryBitMask = scoreCategory
-        contactNode.physicsBody?.contactTestBitMask = beerCategory
+        //TODO beer contact
         pipePair.addChild(contactNode)
         
         pipePair.runAction(movePipesAndRemove)
