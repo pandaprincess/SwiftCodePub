@@ -3,6 +3,7 @@ Small Swift Workshop
 
 
 Step 1
+<br>
 Create a new project
 <br>
 Step 2
@@ -11,21 +12,24 @@ Step 2
 <li>		Add a label and a button to the storyboard
 </li><li>		Connect label and button to viewcontroller
 </li><li>		Create a random backgroundcolor func for button
-</li>
+</li></ul>
 <br>
 Step 3
 <br>
-		Add a new button
-		Create a new viewcontroller in the storyboard
-		Add a new swift file to the project, make it be a CocoaTouch class
-		Connect the viewcontroller in the storyboard to the new file
+<ul><li>		Add a new button
+</li><li>		Create a new viewcontroller in the storyboard
+</li><li>		Add a new swift file to the project, make it be a CocoaTouch class
+</li><li>		Connect the viewcontroller in the storyboard to the new file
+</li></ul>
 <br>
 Step 4
 <br>
-		Add a tableview to the storyboard
-		Add tableviewcell
-		Connect the tableview to viewcontroller
-		UITableViewDelegate UITableViewDatasource
+<ul><li>		Add a tableview to the storyboard
+</li><li>		Add tableviewcell
+</li><li>		Connect the tableview to viewcontroller
+</li><li>		UITableViewDelegate UITableViewDatasource
+</li></ul>
+<br>
 Step 5
-		Short intro to SpriteKit
+<br>		Short intro to SpriteKit
 
