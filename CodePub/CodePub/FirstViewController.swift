@@ -20,7 +20,7 @@ class FirstViewController: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
+//        self.navigationController?.navigationBarHidden = true
     }
     
     override func didReceiveMemoryWarning() {

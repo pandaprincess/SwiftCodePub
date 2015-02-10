@@ -27,6 +27,8 @@
 		D82B522C1A706D4F00C13010 /* ck4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52271A706D4F00C13010 /* ck4.jpg */; };
 		D82B522D1A706D4F00C13010 /* ck5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D82B52281A706D4F00C13010 /* ck5.jpg */; };
 		D82B523A1A70F6DB00C13010 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B52391A70F6DB00C13010 /* GameViewController.swift */; };
+		D85D6BA31A8962170043F9C0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D6BA21A8962170043F9C0 /* StartViewController.swift */; };
+		D85D6BA51A8962DE0043F9C0 /* CarryOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D6BA41A8962DE0043F9C0 /* CarryOnViewController.swift */; };
 		D8A14D6E1A71402F008CACC9 /* beer01.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A14D6A1A71402F008CACC9 /* beer01.png */; };
 		D8A14D6F1A71402F008CACC9 /* beer02.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A14D6B1A71402F008CACC9 /* beer02.png */; };
 		D8A14D701A71402F008CACC9 /* beer04.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A14D6C1A71402F008CACC9 /* beer04.png */; };
@@ -68,6 +70,8 @@
 		D82B52271A706D4F00C13010 /* ck4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck4.jpg; path = Resources/ck4.jpg; sourceTree = SOURCE_ROOT; };
 		D82B52281A706D4F00C13010 /* ck5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ck5.jpg; path = Resources/ck5.jpg; sourceTree = SOURCE_ROOT; };
 		D82B52391A70F6DB00C13010 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D85D6BA21A8962170043F9C0 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D85D6BA41A8962DE0043F9C0 /* CarryOnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarryOnViewController.swift; sourceTree = "<group>"; };
 		D8A14D6A1A71402F008CACC9 /* beer01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer01.png; path = Resources/beer01.png; sourceTree = SOURCE_ROOT; };
 		D8A14D6B1A71402F008CACC9 /* beer02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer02.png; path = Resources/beer02.png; sourceTree = SOURCE_ROOT; };
 		D8A14D6C1A71402F008CACC9 /* beer04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer04.png; path = Resources/beer04.png; sourceTree = SOURCE_ROOT; };
@@ -116,6 +120,8 @@
 			children = (
 				D82B52231A706D2700C13010 /* Resources */,
 				D82B52011A705CAD00C13010 /* AppDelegate.swift */,
+				D85D6BA21A8962170043F9C0 /* StartViewController.swift */,
+				D85D6BA41A8962DE0043F9C0 /* CarryOnViewController.swift */,
 				D82B52031A705CAD00C13010 /* FirstViewController.swift */,
 				D82B52211A70647C00C13010 /* CupcakesViewController.swift */,
 				D82B52391A70F6DB00C13010 /* GameViewController.swift */,
@@ -292,8 +298,10 @@
 				D80E5B261A70F9B300677A56 /* FlappyBeerScene.swift in Sources */,
 				D82B523A1A70F6DB00C13010 /* GameViewController.swift in Sources */,
 				D82B52221A70647C00C13010 /* CupcakesViewController.swift in Sources */,
+				D85D6BA51A8962DE0043F9C0 /* CarryOnViewController.swift in Sources */,
 				D82B52041A705CAD00C13010 /* FirstViewController.swift in Sources */,
 				D82B52021A705CAD00C13010 /* AppDelegate.swift in Sources */,
+				D85D6BA31A8962170043F9C0 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
